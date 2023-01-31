@@ -1,0 +1,19 @@
+@charset "utc-8"; 
+
+.elementToFadeInAndOut {
+    opacity: 0;
+    transition-delay: opacity 2s linear;
+}
+
+div { 
+    width: 20%; 
+    margin-top: 2em;
+}
+
+p {
+    background-color: black;
+    color: white; 
+    text-align: center; 
+    font-family: arial; 
+    padding: 1em; 
+}
