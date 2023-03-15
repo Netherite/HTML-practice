@@ -1,0 +1,30 @@
+body {
+    background-color: #25384D;
+
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: white; 
+    font-size: 90px; 
+    font-weight: normal; 
+
+}
+
+.section_one {
+    max-width: 900px;
+}
+
+span {
+    font-family: 'inter', sans-serif; 
+    color: white; 
+    font-size: 18px; 
+
+}
+
+.navbar {
+    position: fixed; 
+    display: flex; 
+    flex-direction: column;
+
+}
