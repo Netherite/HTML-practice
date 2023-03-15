@@ -1,6 +1,34 @@
+/* ====== DOCUMENT ====== */
+
 body {
     background-color: #25384D;
+    margin: 0px; 
+}
 
+.gridwrapper {
+    display: grid; 
+    grid-template-columns: 30; 
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* ====== SECTION ONE ====== */
+
+.section_one_wrapper {
+    width: 100%;
+    grid-column: 1 / 13;
+    align-items: center;
+    display: flex; 
+    position: relative; 
+
+}
+
+.section_one_content {
+    display: grid; 
+    max-width: 900px;
+    grid-column: 4 / 13;
 }
 
 h1 {
@@ -8,23 +36,36 @@ h1 {
     color: white; 
     font-size: 90px; 
     font-weight: normal; 
-
-}
-
-.section_one {
-    max-width: 900px;
 }
 
 span {
     font-family: 'inter', sans-serif; 
     color: white; 
     font-size: 18px; 
+    display: block; 
 
 }
 
+/* ====== NAV BAR ====== */
+
 .navbar {
     position: fixed; 
+    height: 100%; 
+    background: black; 
+    color: white; 
+    width: 292px; 
+    margin: 0px; 
+    padding: 50px; 
     display: flex; 
     flex-direction: column;
+    top: 0px; 
+    transition: all 0.3s ease 0s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
 
+.navbar > li a {
+    display: block; 
 }
