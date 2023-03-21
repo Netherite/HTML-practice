@@ -16,7 +16,7 @@ body {
 
 /* ====== SECTION ONE ====== */
 
-.section_one_wrapper {
+.container {
     width: 100%;
     grid-column: 1 / 13;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 }
 
 .section_one_content {
-    display: grid; 
+    display: block; 
     max-width: 900px;
     grid-column: 4 / 13;
 }
