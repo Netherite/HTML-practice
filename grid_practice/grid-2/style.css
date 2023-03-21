@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid; 
+    gap: 10px; 
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem; 
+    grid-row: auto; 
+    background-color: rgb(42, 42, 243);
+    padding: 15px; 
+}
+
+.grid-container > div {
+    background-color: rgb(189, 227, 255);
+    height: 25px; 
+    padding: 10px; 
+    border-color: black; 
+    border-style:solid; 
+}
+
+
+.item1 {
+    grid-row: 1 / span 3; 
+}
+
+.item2 {
+    grid-row: 2 / span 3; 
+}
