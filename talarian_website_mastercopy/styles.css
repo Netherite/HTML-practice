@@ -7,7 +7,6 @@ body {
 
 .gridwrapper {
     display: grid; 
-    grid-template-columns: 30; 
     grid-template-columns: repeat(12, 1fr);
     column-gap: 10px;
     background-repeat: no-repeat;
@@ -16,20 +15,13 @@ body {
 
 /* ====== SECTION ONE ====== */
 
-.container {
+.section_one {
     width: 100%;
-    grid-column: 1 / 13;
+    grid-column: 6 / 13;
     align-items: center;
     display: flex; 
-    position: relative; 
-
 }
 
-.section_one_content {
-    display: block; 
-    max-width: 900px;
-    grid-column: 4 / 13;
-}
 
 h1 {
     font-family: 'Lexend Deca', sans-serif;
@@ -42,18 +34,15 @@ span {
     font-family: 'inter', sans-serif; 
     color: white; 
     font-size: 18px; 
-    display: block; 
-
 }
 
 /* ====== NAV BAR ====== */
 
-.navbar {
-    position: fixed; 
+nav {
     height: 100%; 
-    background: black; 
+    background: black;
+    grid-column: 1 / 4;
     color: white; 
-    width: 292px; 
     margin: 0px; 
     padding: 50px; 
     display: flex; 
@@ -68,4 +57,14 @@ span {
 
 .navbar > li a {
     display: block; 
+}
+
+ul {
+    list-style: none; 
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: rem;
+}
+
+.red {
+    color: red; 
 }
