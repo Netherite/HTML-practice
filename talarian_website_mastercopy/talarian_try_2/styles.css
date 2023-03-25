@@ -1,0 +1,45 @@
+/* === document ===*/
+* {
+    background-color: #25384D;
+    color: white; 
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: white; 
+    font-size: 90px; 
+    font-weight: normal; 
+}
+
+span {
+    font-family: 'inter', sans-serif; 
+    color: white; 
+    font-size: 1.5rem; 
+    line-height: 2.3rem; 
+}
+
+/* === grid ===*/
+.grid_wrapper {
+    margin-top: 170px;
+    margin-left: 325px;
+    margin-right: 75px;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px; 
+}
+
+.grid_wrapper div {
+    /*background-color: rgb(128, 128, 255);*/
+}
+
+.grid_wrapper div:nth-child(even) {
+    /*background-color: rgb(61, 61, 197);*/ 
+}
+
+.section_one {
+    grid-column-start: 2;
+    grid-column-end: 11;
+}
+
+/* ===  ===*/
