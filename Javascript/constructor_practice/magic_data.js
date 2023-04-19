@@ -25,4 +25,5 @@ class magicWielders {
 let tasha = new magicWielders("Tasha", "Human", "Wizard", 20, 145);
 let mordenkainen = new magicWielders("Mordenkainen", "Human", "Wizard", 164, 89);
 
-console.log(tasha.dndClass)
+console.log(tasha.dndClass);
+console.log(mordenkainen.whatIsThis())
