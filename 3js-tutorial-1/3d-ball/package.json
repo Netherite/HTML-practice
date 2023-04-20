@@ -1,5 +1,5 @@
 {
-  "name": "3js-ball",
+  "name": "3d-ball",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.3.0"
+    "three": "^0.151.3",
+    "vite": "^4.3.1"
   },
   "dependencies": {
-    "gsap": "^3.11.5",
-    "three": "^0.151.3"
+    "gsap": "^3.11.5"
   }
 }
