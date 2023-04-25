@@ -1,10 +1,33 @@
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; 
+
+
 
 //scene
 const scene = new THREE.Scene();
 
+//load model 
+const loader = new GLTFLoader();
+
+loader.load( 'globe.gltf', function ( gltf ) {
+
+	scene.add( gltf.scene );
+    gltf.animations; // Array<THREE.AnimationClip>
+		gltf.scene; // THREE.Group
+		gltf.scenes; // Array<THREE.Group>
+		gltf.cameras; // Array<THREE.Camera>
+		gltf.asset; // Object
+
+}, undefined, function ( error ) {
+
+	console.error( error );
+
+} );
+
+
 
 //sphere
+/*
 const geometry = new THREE.SphereGeometry( 5, 64, 64 );
 const material = new THREE.MeshBasicMaterial( { color: 0xFF5733 } );
 const sphere = new THREE.Mesh( geometry, material );
