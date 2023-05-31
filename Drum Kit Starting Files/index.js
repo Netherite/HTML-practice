@@ -1,9 +1,15 @@
+//figuring out how many buttons have the class .drum and saving that number to numberOfDrumButtons 
 var numberOfDrumButtons = document.querySelectorAll(".drum").length; 
 
-function handleEvent(){
-    alert("I got clicked!"); 
+//Creating a loop that will iterate through all instances of .drum button
+for(var i = 0; i < numberOfDrumButtons; i++){
+    //selecting all elements with .drum class, using i in place of that array, then adding event listener with click event and anonymous function that creates an alert
+    document.querySelectorAll('.drum')[i].addEventListener("click", function handleClick(){
+        alert("I got clicked"); 
+    }); 
 }
 
-for(let i = 0; i < numberOfDrumButtons; i++){
-    document.querySelectorAll(".drum")[i].addEventListener("click", handleEvent); 
-}
+//adding event listener to button
+
+
+ 
