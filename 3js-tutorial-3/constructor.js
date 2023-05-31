@@ -71,3 +71,20 @@ class dndClass {
 
 const barbarian = new dndClass('Barbarian', '1d12 per barbarian level', '12 + constitution modifier', '1d12 (or 7) + constitution modifier per barbarial level after 1st'); 
 console.log(barbarian); 
+
+function add(a, b){
+    return a + b; 
+}
+
+console.log(add(2, 3)); 
+
+//1. do a query selector and select the h1 element and get the length of the string 
+const header = document.querySelector('#introHeader'); 
+const headerLength = header.textContent.length; 
+console.log(headerLength); 
+
+//2. do a query selector for the header and change the text 
+header.innerHTML = "new text"; 
+
+// take a body of text and toggle it visible and invisible on click 
+document.getElementById("first").addEventListener("click", expandedText); 
