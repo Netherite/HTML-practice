@@ -3,11 +3,10 @@
 var numberOfDrumButtons = document.querySelectorAll(".drum").length; 
 
 
-//watching for keyboard event which is pretty automatic
-document.addEventListener("keypress", function(event){
-    makeSound(event.key); 
-})
+//watching for keyboard event, which is pretty automatic. 
 
+
+//function that makes sound 
 function makeSound(key){
     switch(key){
         case "w":
@@ -60,3 +59,5 @@ for(var i = 0; i < numberOfDrumButtons; i++){
      
 }
 
+
+'use strict'
